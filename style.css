@@ -8,69 +8,78 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom right, #f0f4f8, #c8d9ef); /* Gradient background inspired by a tech and academic theme */
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* Gradient background */
+    color: #fff;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
 }
 
-/* Main Container */
-section {
-    background-color: #ffffff;
-    padding: 2rem;
+/* Container */
+.container {
     width: 90%;
-    max-width: 800px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
-    margin-top: 30px;
-    border: 1px solid #d4d2cf;
+    max-width: 1000px;
+    background: #ffffff; /* Card-style container */
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    margin: 2rem auto;
+    overflow: hidden;
 }
 
 /* Header */
 header {
-    background-color: #4a90e2; /* Cool blue to reflect academic and tech vibes */
-    color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #d4d9de;
 }
 
 header h1 {
-    font-size: 2rem;
-    margin: 0;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #1e3c72;
 }
 
 header p {
-    margin: 1rem 0 0;
+    font-size: 1.2rem;
+    color: #666;
 }
 
 /* Section Titles */
 h2 {
-    color: #4a90e2;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #2a5298;
+    border-bottom: 2px solid #1e3c72;
+    display: inline-block;
+    padding-bottom: 0.3rem;
 }
 
-/* List Items */
+/* List Styles */
 ul {
     list-style: none;
+    margin: 1rem 0;
     padding: 0;
 }
 
 ul li {
-    background-color: #e9f1ec; /* Soft green background for list items */
-    margin-bottom: 0.5rem;
-    padding: 0.75rem;
-    border-radius: 5px;
-    border: 1px solid #cdd7cf;
+    background: #f9f9f9;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid #d4d9de;
+    border-radius: 8px;
+    color: #333;
+    font-size: 1rem;
 }
 
 /* Links */
 a {
-    color: #4a90e2;
+    color: #1e3c72;
     text-decoration: none;
     font-weight: bold;
 }
@@ -80,33 +89,48 @@ a:hover {
 }
 
 /* Definition List */
+dl {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-radius: 8px;
+    color: #444;
+}
+
 dl dt {
     font-weight: bold;
-    color: #333;
-    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #2a5298;
 }
 
 dl dd {
-    margin-left: 1.5rem;
+    margin-left: 1rem;
     color: #666;
 }
 
 /* Blockquote */
 blockquote {
     font-style: italic;
-    color: #555;
-    border-left: 4px solid #4a90e2;
-    padding-left: 1rem;
-    margin-top: 2rem;
+    color: #444;
+    background: #eef2f3;
+    border-left: 4px solid #1e3c72;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 8px;
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
-    section {
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    .container {
         padding: 1.5rem;
     }
-
-    header {
-        padding: 1.5rem;
+    header h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
     }
 }
