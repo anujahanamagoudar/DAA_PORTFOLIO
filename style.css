@@ -8,7 +8,7 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f7f1e8; /* Light wood-like background tone */
+    background: linear-gradient(to bottom right, #f0f4f8, #c8d9ef); /* Gradient background inspired by a tech and academic theme */
     margin: 0;
     padding: 20px;
     display: flex;
@@ -27,12 +27,12 @@ section {
     border-radius: 8px;
     text-align: center;
     margin-top: 30px;
-    border: 1px solid #d4d2cf; /* Subtle border to reflect clean lines */
+    border: 1px solid #d4d2cf;
 }
 
 /* Header */
 header {
-    background-color: #7ba394; /* Muted green inspired by keyboard tones */
+    background-color: #4a90e2; /* Cool blue to reflect academic and tech vibes */
     color: white;
     padding: 2rem;
     border-radius: 8px;
@@ -50,7 +50,7 @@ header p {
 
 /* Section Titles */
 h2 {
-    color: #7ba394;
+    color: #4a90e2;
     margin-bottom: 1rem;
 }
 
@@ -70,7 +70,7 @@ ul li {
 
 /* Links */
 a {
-    color: #7ba394;
+    color: #4a90e2;
     text-decoration: none;
     font-weight: bold;
 }
@@ -95,7 +95,7 @@ dl dd {
 blockquote {
     font-style: italic;
     color: #555;
-    border-left: 4px solid #7ba394;
+    border-left: 4px solid #4a90e2;
     padding-left: 1rem;
     margin-top: 2rem;
 }
